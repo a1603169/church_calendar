@@ -1,0 +1,30 @@
+@import "../../reset/reset.css";
+
+.header {
+  background-color: #3a3897;
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 16px 0;
+}
+
+.header .listsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.header a {
+  text-decoration: none;
+}
+.header .nav_btn {
+  margin: 8px 16px;
+  padding: 8px 16px;
+  color: white;
+}
+
+.header a.active,
+.header a:hover,
+.header a:active {
+  color: #7473b1;
+  border-bottom: 3px solid #7473b1;
+  padding-bottom: 3px;
+}

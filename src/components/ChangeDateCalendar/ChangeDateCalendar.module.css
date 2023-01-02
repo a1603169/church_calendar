@@ -1,0 +1,18 @@
+.calendar_container {
+  margin: 10px 0;
+}
+
+.calendar_container .react_calendar_outline {
+  border-radius: 10px !important;
+  width: auto !important;
+  margin: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none !important;
+}
+.calendar_container .react_calendar_outline button {
+  padding: 25px 15px;
+  font-size: 22px;
+}
+.react-calendar {
+}

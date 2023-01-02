@@ -1,0 +1,173 @@
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
+  height: 450px;
+  /* This needs to be modifed */
+  text-align: center;
+  font-family: arial;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* .card_image {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+  border-radius: 15px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.card_image:hover img {
+  transform: scale(1.1);
+} */
+
+.card_content {
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.card_content:hover {
+  scale: calc(1.1);
+}
+
+.card_title {
+  font-size: 24px;
+  margin: 0 0 24px 0;
+}
+
+.card_description {
+  font-size: 24px;
+  position: absolute;
+  top: 24px;
+  left: 32px;
+}
+
+.card_description_highlighted {
+  text-transform: uppercase;
+  position: relative;
+  bottom: 0.5rem;
+  font-family: arial2;
+  font-size: 24px;
+  font-weight: 500;
+}
+.card_description_highlighted:before {
+  content: "";
+  left: -0.5em;
+  top: -0.1em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ef8c22;
+  position: absolute;
+  border-right-color: transparent;
+  width: 100%;
+  height: 1em;
+  transform: rotate(2deg);
+  opacity: 1;
+  border-radius: 50%;
+  padding: 0.1em 0.25em;
+}
+.card_description_highlighted:after {
+  content: "";
+  left: -0.5em;
+  top: 0.1em;
+  padding: 0.1em 0.25em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ef8c22;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  transform: rotate(-1deg);
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.card_description_week {
+  position: absolute;
+  font-size: 24px;
+  bottom: 16px;
+  right: 16px;
+  text-transform: uppercase;
+}
+
+.card_schedule_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+  transition: 0.5s;
+  border-radius: 15px;
+  min-height: 300px;
+}
+
+.card_schedule_content:hover {
+  scale: calc(1.1);
+}
+
+.card_schedule_title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  position: absolute;
+  top: 24px;
+  left: 32px;
+}
+
+.card_schedule_highlighted {
+  position: absolute;
+  font-size: 24px;
+  text-transform: uppercase;
+  right: 16px;
+  bottom: 16px;
+}
+
+.card_schedule_lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card_schedule_list {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 940px) {
+  .card_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card_image {
+    display: none;
+    /* Update Feature! Later it will show the contact detail but now it is not necessary so display none */
+  }
+  .card_schedule_title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .card_content:hover {
+    scale: calc(1);
+  }
+  .card_schedule_content:hover {
+    scale: calc(1);
+  }
+}
