@@ -9,22 +9,26 @@
 
 .header .listsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header a {
   text-decoration: none;
 }
+
 .header .nav_btn {
   margin: 8px 16px;
   padding: 8px 16px;
   color: white;
+  transition: 0.5s;
+  border: 1px solid white;
 }
 
 .header a.active,
 .header a:hover,
 .header a:active {
   color: #7473b1;
-  border-bottom: 3px solid #7473b1;
-  padding-bottom: 3px;
+  border: 3px solid #7473b1;
+  padding: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

@@ -38,9 +38,18 @@ function Card({ season, week, title, weekday }) {
               Contact Us
             </span>
           </p>
+          <span>
+            <a
+              className={classes.card_contact}
+              href="mailto:email@example.com?subject=Related to Error"
+            >
+              EMAIL
+            </a>
+          </span>
         </div>
         {/*Update features! Show multiple images slides according to the season api value*/}
         <div className={classes.card_content}>
+          <div className={classes.card_content_text}></div>
           {title.map((arr) => {
             return <marquee className={classes.card_title}>{arr[0]}</marquee>;
           })}
@@ -80,6 +89,14 @@ function Card({ season, week, title, weekday }) {
               Contact Us
             </span>
           </p>
+          <span>
+            <a
+              className={classes.card_contact}
+              href="mailto:email@example.com?subject=Related to Error"
+            >
+              EMAIL
+            </a>
+          </span>
         </div>
 
         <div className={classes.card_content}>

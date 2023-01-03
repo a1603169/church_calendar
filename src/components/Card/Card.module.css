@@ -44,12 +44,27 @@
 }
 
 .card_content:hover {
-  scale: calc(1.1);
+  scale: calc(1.05);
+}
+.card_content_text {
+}
+
+.card_contact {
+  text-decoration: none;
+  color: black;
+  border: 1px solid grey;
+  padding: 10px 35px;
+  transition: 0.5s;
+}
+.card_contact:hover {
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-width: 3px;
 }
 
 .card_title {
   font-size: 24px;
-  margin: 0 0 24px 0;
+  margin: 10px 0;
 }
 
 .card_description {
@@ -122,7 +137,7 @@
 }
 
 .card_schedule_content:hover {
-  scale: calc(1.1);
+  scale: calc(1.05);
 }
 
 .card_schedule_title {

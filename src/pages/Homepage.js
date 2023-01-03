@@ -5,6 +5,7 @@ function Home() {
   return (
     <>
       <Header />
+      {/* I will update if something is needed */}
       <TodayPara />
     </>
   );

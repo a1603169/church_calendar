@@ -1,42 +1,25 @@
 import { NavLink } from "react-router-dom";
+
 import classes from "./Header.module.css";
 
 function active() {
   return (
     <header className={classes.header}>
       <nav>
+        <ul className={classes.listsContainer}></ul>
         <ul className={classes.listsContainer}>
           <li>
             <NavLink className={classes.nav_btn} to="/">
-              Home
+              CHURCH CALENDAR
             </NavLink>
           </li>
           <li>
-            <NavLink
-              activeClassName={classes.active}
+            <a
               className={classes.nav_btn}
-              to="/monthly"
+              href="https://github.com/a1603169/church_calendar"
             >
-              Monthly
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName={classes.active}
-              className={classes.nav_btn}
-              to="/weekly"
-            >
-              Weekly
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName={classes.active}
-              className={classes.nav_btn}
-              to="/daily"
-            >
-              Daily
-            </NavLink>
+              GITHUB
+            </a>
           </li>
         </ul>
       </nav>
