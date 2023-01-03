@@ -41,7 +41,7 @@ function Card({ season, week, title, weekday }) {
           <span>
             <a
               className={classes.card_contact}
-              href="mailto:email@example.com?subject=Related to Error"
+              href="mailto:upi21x@gmail.com?subject=Related to Error"
             >
               EMAIL
             </a>
