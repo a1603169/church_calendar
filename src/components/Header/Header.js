@@ -17,6 +17,7 @@ function active() {
             <a
               className={classes.nav_btn}
               href="https://github.com/a1603169/church_calendar"
+              target="_BLANK"
             >
               GITHUB
             </a>
