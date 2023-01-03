@@ -42,6 +42,7 @@ function Card({ season, week, title, weekday }) {
             <a
               className={classes.card_contact}
               href="mailto:upi21x@gmail.com?subject=Related to Error"
+              target="_BLANK"
             >
               EMAIL
             </a>
