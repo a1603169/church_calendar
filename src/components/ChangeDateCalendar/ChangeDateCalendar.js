@@ -12,7 +12,7 @@ function ChangeDateCalendar() {
 
   const defaultURL =
     "http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/";
-  // get the URL
+  // get the URL s
 
   const toAddURL = moment(value.toISOString())
     .format()
