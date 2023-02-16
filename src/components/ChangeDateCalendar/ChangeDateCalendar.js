@@ -5,6 +5,9 @@ import classes from "./ChangeDateCalendar.module.css";
 import axios from "axios";
 import moment from "moment";
 import ChurchInfo from "../ChurchInfo/ChurchInfo";
+// import { corsAnywhere } from "cors-anywhere";
+
+// const cors = corsAnywhere.create();
 
 function ChangeDateCalendar() {
   const [value, onChange] = useState(new Date());
@@ -19,6 +22,34 @@ function ChangeDateCalendar() {
     .slice(0, 10)
     .toUpperCase()
     .replaceAll("-", "/");
+
+  // useEffect(() => {
+  //   cors.get(defaultURL + toAddURL).then((res) => {
+  //     const resInfo = res.data;
+  //     if (res.data.celebrations.length > 1) {
+  //       setData({
+  //         season: resInfo.season,
+  //         week: resInfo.season_week,
+  //         celebrations: [
+  //           ...resInfo.celebrations.map((title) => [
+  //             title.title,
+  //             title.rank,
+  //             title.rank_num,
+  //           ]),
+  //         ],
+  //         weekday: resInfo.weekday,
+  //       });
+  //     } else {
+  //       setData({
+  //         season: resInfo.season,
+  //         week: resInfo.season_week,
+  //         celebrations: resInfo.celebrations[0].title,
+  //         weekday: resInfo.weekday,
+  //       });
+  //     }
+  //   });
+  // }, [value]);
+
   // This is to become more specified to the api url to get the specific date's information, it will be added.
   // moment library to fix ISO date - 1 issue
 
@@ -49,6 +80,7 @@ function ChangeDateCalendar() {
     });
   }, [value]);
   // Otherwise infinite rendering by setDate
+  // This is disabled because of the CORS issue
 
   return (
     <>
